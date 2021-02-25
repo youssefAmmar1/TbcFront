@@ -2,7 +2,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    height: "89vh",
+    height: "100vh",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",

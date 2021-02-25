@@ -1,0 +1,11 @@
+button[aria-label="Previous"] {
+  background-color: transparent;
+  color: rgba(4,241,170,255);
+  opacity: 1;
+}
+
+button[aria-label="Next"] {
+  background-color: transparent;
+  color: rgba(4,241,170,255);
+  opacity: 1;
+}

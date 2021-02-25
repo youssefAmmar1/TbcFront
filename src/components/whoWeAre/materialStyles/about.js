@@ -2,8 +2,11 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    minHeight: "85vh",
-    margin: "7em 2em 0em",
+    minHeight: "100vh",  
+    margin: "3em 2em 2em",
+    [theme.breakpoints.down("lg")]: {
+      minHeight: "60vh"
+    }
   },
   title: {
     fontFamily: "Nunito",

@@ -5,6 +5,8 @@ import About from "./whoWeAre/About";
 import { makeStyles, ThemeProvider } from "@material-ui/core/styles";
 import theme from "../themes/theme";
 import VideoPreview from "./VideoPreview/VideoPreview";
+import Testimonials from "./Testimonials/Testimonials";
+
 const useStyles = makeStyles((theme) => ({
   root: {
     height: "100vh",
@@ -25,6 +27,7 @@ function App() {
         <WelcomeSection />
         <About />
         <VideoPreview />
+        <Testimonials />
       </div>
     </ThemeProvider>
   );

@@ -10,7 +10,7 @@ export default function VideoPreview() {
     <React.Fragment>
       <div className={classes.root}>
       <Collapse in={checked} {...(checked? {timeout:1500} : {})}>
-      <img src={process.env.PUBLIC_URL + "/images/videoPlayer.jpg"} alt="video preview"/>
+      <img src={process.env.PUBLIC_URL + "/images/videoPlayer.jpg"} alt="video preview" className={classes.videoPlayer}/>
       </Collapse>
       </div>
     </React.Fragment>
