@@ -6,6 +6,7 @@ import { makeStyles, ThemeProvider } from "@material-ui/core/styles";
 import theme from "../themes/theme";
 import VideoPreview from "./VideoPreview/VideoPreview";
 import Testimonials from "./Testimonials/Testimonials";
+import Footer from "./Footer/Footer";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -28,6 +29,7 @@ function App() {
         <About />
         <VideoPreview />
         <Testimonials />
+        <Footer />
       </div>
     </ThemeProvider>
   );

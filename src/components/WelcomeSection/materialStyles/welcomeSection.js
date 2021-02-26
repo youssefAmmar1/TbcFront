@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    margin: "0 auto"
+    margin: "0 auto",
   },
   fit: {
     color: "white"

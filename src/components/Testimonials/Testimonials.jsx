@@ -1,7 +1,7 @@
 import React from "react";
 import Carousel from "react-material-ui-carousel";
 import { Paper, Button, Typography } from "@material-ui/core";
-import useStyles from "./materialStyles/testimonials";
+import useStyles from "./materialStyles/testimonial";
 import reviews from "./reviews";
 import "./styles.css";
 
@@ -28,14 +28,14 @@ function TestimonialCarousel() {
 function Item(props) {
   const classes = useStyles();
   return (
-    <div className={classes.testimonialCarousel}>
+    <div className={classes.itemDiv}>
       <div className={classes.ratingSection}>
         <img
           src={process.env.PUBLIC_URL + "/svgs/circle.svg"}
           className={classes.circle}
           alt="circle"
         />
-        <Typography variant="h3" className={classes.rating}>
+        <Typography variant="h3" className={classes.ratingNumber}>
           {props.item.rating}
         </Typography>
       </div>

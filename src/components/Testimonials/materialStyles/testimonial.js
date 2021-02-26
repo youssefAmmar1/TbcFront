@@ -4,7 +4,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
     flexDirection: "column",
-    minHeight: "65vh",
+    minHeight: "60vh",
     margin: "2em 2em 2em",
     [theme.breakpoints.down("md")]: {
       minHeight: "30vh",
@@ -18,44 +18,41 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   carousel: {
-    margin: "2em 5em",
+    margin: "1em 5em"
   },
   paper: {
-    position: "relative",
     textAlign: "center",
-    margin: "0 0.1em 0.5em",
-    zIndex: "0",
+    margin: "auto 0.1em",
     padding: "5em 1em",
     border: "1px solid #ddd",
-    borderRadius: "2em",
+    borderRadius: "1em",
   },
   circle: {
     position: "absolute",
-    width: "18vh",
-    zIndex: "-1",
-    // left: "-1em",
-    //     top: "-2em",
+    width: "22vh",
+    zIndex: 2
   },
-  rating: {
-    position: "relative",
-    zIndex: "2",
-    bottom: "1.8em",
-    // left: "1em",
-    // top: "2em",
+  ratingNumber: {
+    position: "absolute",
+    fontSize: "4em",
+    letterSpacing: 0,
+    zIndex: 3,
+    marignTop: "5em",
+
   },
   ratingSection: {
+    display: "flex",
     position: "absolute",
-    backgroundColor: "red",
-    textAlign: "center",
-    maxHeight: "18vh",
-    zIndex: "1",
-    left: "0em",
-    top: "0em",
+    alignItems: "center",
+    justifyContent: "center",
+    minWidth: "22vh",
+    minHeight: "22vh",
   },
-  testimonialCarousel: {
-    minHeight: "50vh",
-    backgroundColor: "green",
-  },
+  itemDiv: {
+      display: "flex",
+      flexDirection: "column",
+      minHeight: "60vh"
+  }
 }));
 
 export default useStyles;

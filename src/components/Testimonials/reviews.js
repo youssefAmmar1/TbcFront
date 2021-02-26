@@ -5,7 +5,7 @@ const reviews = [
     store: "58c03a958060197ca0b52d50",
     text:
       "I tried this place last week and it was incredible! Amazing selection of local and imported brews and the food is to die for! ",
-    rating: 5,
+    rating: 3,
     created: "2017-03-08T17:09:21.627Z",
   },
   {
