@@ -28,15 +28,19 @@ function TestimonialCarousel() {
 function Item(props) {
   const classes = useStyles();
   return (
-    <div>
-      <Paper className={classes.paper} elevation={7}>
+    <div className={classes.testimonialCarousel}>
+      <div className={classes.ratingSection}>
         <img
           src={process.env.PUBLIC_URL + "/svgs/circle.svg"}
           className={classes.circle}
           alt="circle"
         />
+        <Typography variant="h3" className={classes.rating}>
+          {props.item.rating}
+        </Typography>
+      </div>
+      <Paper className={classes.paper} elevation={7}>
         <Typography variant="h4">{props.item.text}</Typography>
-        <Typography variant="h3" className={classes.rating}>{props.item.rating}</Typography>
 
         <Button className="CheckButton">Check it out!</Button>
       </Paper>
