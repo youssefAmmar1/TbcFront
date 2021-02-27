@@ -19,7 +19,7 @@ export default function SimpleContainer() {
     <React.Fragment>
     
       <Container maxWidth="false" disableGutters="true" className={classes.root}>
-      <Collapse in={checked} {...(checked? {timeout:1500} : {})} collapsedHeight={50}>
+      <Collapse in={checked} {...(checked? {timeout:1500} : {})}>
         <Typography variant="h1" className={classes.header}>Click<span className={classes.fit}>Fit</span></Typography>
         <div className={classes.socials}>
           <FacebookIcon fontSize="large" className={classes.margining} />

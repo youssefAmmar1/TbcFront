@@ -2,12 +2,17 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    height: "100vh",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
+    // maxHeight: "100vh",
     alignItems: "center",
-    margin: "0 auto",
+    backgroundImage: `url(${
+      process.env.PUBLIC_URL + "/images/background.jpg"
+    })`,
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    padding: "125px 5.2%",
   },
   fit: {
     color: "white"

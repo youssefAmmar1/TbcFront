@@ -1,4 +1,8 @@
 ::selection {
-    color: white;
-    background: aqua;
+    color: rgb(0,46,58);
+    background: rgb(0,226,183);
+}
+
+a {
+    cursor: pointer;
 }

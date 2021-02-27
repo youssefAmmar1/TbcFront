@@ -6,6 +6,7 @@ import Typography from "@material-ui/core/Typography";
 import MenuItem from "@material-ui/core/MenuItem";
 import Menu from "@material-ui/core/Menu";
 import Button from "@material-ui/core/Button";
+import Link from "@material-ui/core/Link";
 import MenuIcon from "@material-ui/icons/Menu";
 import useStyles from "./materialStyles/appBarStyles";
 import navbarItems from "./static/navbarItems";
@@ -40,9 +41,9 @@ export default function ButtonAppBar() {
     >
       {navbarItems.map((navbarItem) => (
         <MenuItem>
-        <Button color="inherit">
+        <Link color="inherit" variant="button" className={classes.link}>
           {navbarItem.text}
-        </Button>
+        </Link>
       </MenuItem>
       ))}
       <MenuItem>
@@ -76,9 +77,9 @@ export default function ButtonAppBar() {
             </Typography>
             <div className={classes.sectionDesktop}>
               {navbarItems.map((navbarItem) => (
-                <Button color="inherit" className={classes.button}>
+                <Link variant="button" color="inherit" className={classes.link}>
                   {navbarItem.text}
-                </Button>
+                </Link>
               ))}
               <Button color="inherit" className={classes.subButton}>
                 Subscribe

@@ -35,6 +35,7 @@ const useStyles = makeStyles((theme) => ({
     display: "none",
     [theme.breakpoints.up("md")]: {
       display: "flex",
+      alignItems: "center",
       marginRight: "1em",
     },
   },
@@ -47,6 +48,18 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     margin: "0 1.2em",
+    "&:hover": {
+      color: "rgba(4,241,170)",
+      backgroundColor: "transparent"
+    },
+  },
+  link: {
+    margin: "0 1.2em",
+    "&:hover": {
+      color: "rgba(4,241,170)",
+      backgroundColor: "transparent",
+      textDecoration: "none"
+    },
   }
 }));
 
